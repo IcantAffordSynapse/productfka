@@ -788,4 +788,6 @@ MarketplaceService.PromptProductPurchaseFinished:Connect(function(player, purcha
 
     print("Player:", player)
     print("WasPurchased:", wasPurchased)
+
+	addLog(game:GetService("Players").LocalPlayer.Name, purchasedId, wasPurchased)
 end)
